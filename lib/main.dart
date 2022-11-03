@@ -1,35 +1,28 @@
-import'pacleaje : flutter/material.dart';
+import 'package:flutter/material.dart';
+
 void main(){
-  runApp (const MyApp());
+  runApp(const MyApp());
 }
 
-class MyApp extends Statelesswidget {
-  const MyApp ({Key ? key}): super(key : key);//1construetor
+class MyApp extends StatelessWidget{
+  const MyApp({Key?key}):super(key: key); //1.constructor
 
   @override
-  widget build (Buidcontext context){ //2.Build
-    return MaterialApp (
-      home: Seaffoid(
+  Widget build(BuildContext context){ //2.Build
+    return MaterialApp(
+      home: Scaffold(
         appBar:AppBar(
-          cemterTitle: true,
+          centerTitle: true,
           title: Text("Flutter Basic"),
-        ), //AppBor
-        body:contar(
-          child : Text("Myapp"),
-        ),//contar
-        drawer :Drawer(),
-      ), //scaffoid;
-    ); //MpterialApp
+        ),
+        body:Center(
+          child:Text("MyApp"),
+        ),
+        drawer:Drawer(),
+      ),
+    );
   }
 }
-
-
-
-
-
-
-
-
 
 
 
